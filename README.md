@@ -8,7 +8,7 @@
 3) Boot VM
 4) Login with creds; user1 - amazon
 
--- Set root password and VW Hostname --
+-- Set root password and VM Hostname --
 
 5) Switch to root with - sudo -i -
 6) Set root password - passwd root -
@@ -40,3 +40,16 @@
 17) Comment out [PubkeyAuthentication yes]
 18) Uncomment [PasswordAuthentication yes]
 19) Restart sshd service - sudo systemctl restart sshd.service -
+
+
+
+
+
+--- LINKS ---
+
+Seed.iso (created by AWS for Amazon Linux 2 but works on Ubuntu CI);
+https://cdn.amazonlinux.com/os-images/2.0.20190612/Seed.iso
+
+
+Ubuntu Cloud Images (from 10.04 up until lates release server builds);
+https://cloud-images.ubuntu.com/releases/

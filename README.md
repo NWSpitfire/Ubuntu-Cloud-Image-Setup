@@ -40,7 +40,18 @@
 17) Comment out [PubkeyAuthentication yes]
 18) Uncomment [PasswordAuthentication yes]
 19) To add minimal extra security uncomment [MaxAuthTries 6] and change to [MaxAuthTries 1]
-20) Restart sshd service - sudo systemctl restart sshd.service -
+20) Uncomment [PrintMOTD yes]
+21) Restart sshd service - sudo systemctl restart sshd.service -
+
+-- Optional - Set Message Of The Day --
+
+This allows a message to be displayed on every server login.
+
+As "20) Uncomment [PrintMOTD yes]" has already been done;
+
+22) create motd file using - sudo nano /etc/motd -
+23) Write text to the file, server name, welcome message, server location etc.
+24) Save File. Close and reconnect SSH to verify message is shown.
 
 
 

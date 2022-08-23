@@ -39,7 +39,8 @@
 16) Uncomment [PasswordAuthentication yes]
 17) Comment out [PubkeyAuthentication yes]
 18) Uncomment [PasswordAuthentication yes]
-19) Restart sshd service - sudo systemctl restart sshd.service -
+19) To add minimal extra security uncomment [MaxAuthTries 6] and change to [MaxAuthTries 1]
+20) Restart sshd service - sudo systemctl restart sshd.service -
 
 
 
